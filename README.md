@@ -1,6 +1,6 @@
 # PGStatistics
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nucleosynthesis/PGStatistics/main)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nucleosynthesis/PGStatistics/main?urlpath=lab)
 
 Corresponding lecture notes can be found here http://www.hep.ph.ic.ac.uk/~nw709/teaching/StatisticsPGLectures.pdf
 
