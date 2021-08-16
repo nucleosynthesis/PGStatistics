@@ -240,6 +240,7 @@ by following the notebook \href{https://github.com/nucleosynthesis/PGStatistics/
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=\textwidth]{figures/Hypotest/prof_lh_ex.pdf}
+<<<<<<< HEAD
     \caption{Left: Twice negative log-likelihood function for the counting experiment vs 
     $\mu$ and $\eta$. The red line shows the profiled value of the nuisance parameter at each value of $\mu$ $\hat{\eta}_{\mu}$. Right: the profiled log-likelihood function $q(\mu)$.}
     \label{fig:profiledlikelihoodex_counting}
@@ -254,6 +255,13 @@ Again, you can follow the
 \href{https://github.com/nucleosynthesis/PGStatistics/blob/main/notebooks/ProfilingVsMarginalisation.ipynb}{\textsf{ProfilingVsMarginalisation.ipynb}} 
 notebook to see how this works. In that notebook, the posterior distribution is also computed 
 using the Markov chain MC method that we covered in section~\ref{sec:MarkovChain}. 
+=======
+    \caption{Left: Twice negative log-likelihood function for the counting experiment vs $\mu$ and $\eta$. The red line shows the profiled value of the nuisance parameter at each value of $\mu$ $\hat{\eta}_{\mu}$. Right: the profiled log-likelihood function $q(\mu)$.}
+    \label{fig:profiledlikelihoodex_counting}
+\end{figure}
+
+If instead, we want to obtain the marginalised posterior function, we can use the \textsf{scipy.integrate.quad} methods to perform the integration numerically. An example code for producing the marginalised posterior is below, and the output from the code is shown in Figure~\ref{fig:marginalised_ex_counting}. Again, you can follow the \href{https://github.com/nucleosynthesis/PGStatistics/blob/main/notebooks/ProfilingVsMarginalisation.ipynb}{\textsf{ProfilingVsMarginalisation.ipynb}} notebook to see how this works. In that notebook, the posterior distribution is also computed using the Markov chain MC method that we covered in section~\ref{}. 
+>>>>>>> 774f8d8729ae0879bc6e1c7c5316ec6e698ffc5e
 
 
 \begin{figure}[hbt!]
