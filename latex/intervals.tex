@@ -89,8 +89,10 @@ plt.xscale('log')
 plt.legend()
 plt.show()
 \end{lstlisting}
-The results are shown in Figure~\ref{fig:example_mle_normal}. Clearly as $N$ increases, the maximum likelihood estimates for $\mu$ and $\sigma$ get closer to the true values.
+The results are shown in Figure~\ref{fig:example_mle_normal}. 
+Clearly as $N$ increases, the maximum likelihood estimates for $\mu$ and $\sigma$ get closer to the true values.
 \end{tcolorbox}
+
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/Intervals/Consistency_normal.pdf}
@@ -117,6 +119,7 @@ The frequentist approach to reporting uncertainties on measurements is to consid
   we deduce a flux $\phi_d$. The intersection of a vertical line at $\phi_d$ with the confidence band then
  gives the frequentist range for the parameter $T$, $T_{l} \leq T \leq T_{u}$, at the chosen  confidence level. 
 \end{tcolorbox}
+
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=0.6\textwidth]{figures/Intervals/neyman.pdf}
@@ -503,7 +506,9 @@ intervals.sort(); interval = intervals[0]
 print("68.3%% interval (%.2f,%.2f)"%(interval[1][0],interval[1][1]))
 \end{lstlisting}
 
-Figure~\ref{fig:posterior_shortest_interval} shows the posterior distribution $P(\mu)$ for the counting experiment, this time restricting $\mu>0$ by setting the prior $\pi(\mu)=0$ for $\mu\leq0$. The shaded region indicates the shortest 68.3\% credible interval for $\mu$. 
+Figure~\ref{fig:posterior_shortest_interval} shows the posterior distribution $P(\mu)$ for the counting experiment, 
+this time restricting $\mu>0$ by setting the prior $\pi(\mu)=0$ for $\mu\leq0$. The shaded region indicates the shortest 
+68.3\% credible interval for $\mu$. 
 
 \begin{figure}[hbt!]
     \centering
