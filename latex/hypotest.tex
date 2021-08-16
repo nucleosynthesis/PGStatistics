@@ -23,10 +23,18 @@ Clearly this is related to the probability that $X$ falls into the acceptance re
 \begin{equation}
  P(X\in w|H_{1})=1-P(X\in \mathcal{W}-w|H_{1})=\beta.
 \end{equation}
-This is then the probability that we would \emph{accept} the null hypothesis when the alternative is true -- this is known as a \emph{type-II} error. Of course, we want to make sure this error is equally unlikely, hence the choice of a test will amount to maximising the power of the test $(1-\beta)$ for a fixed size of the test.  Figure~\ref{fig:htestregions} summarizes these two types of errors. 
+
+This is then the probability that we would \emph{accept} the null 
+hypothesis when the alternative is true -- this is known as a 
+\emph{type-II} error. Of course, we want to make sure this 
+error is equally unlikely, hence the choice of a test will amount 
+to maximising the power of the test $(1-\beta)$ for a fixed 
+size of the test.  Figure~\ref{fig:htestregions} summarizes 
+these two types of errors.
+
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=0.6\textwidth]{figures/Hypotest/type12.pdf}
+    \includegraphics[width=\textwidth]{figures/Hypotest/type12.pdf}
     \caption{Division of possibilities for the test statistic ($X$) into the yellow critical region $w$, and the blue region of acceptance $(\mathcal{W}-w)$. The probabilities that $X$ falls into the critical region, under the null hypothesis and alternate hypothesis are $\alpha$ and $(1-\beta)$, respectively.}
     \label{fig:htestregions}
 \end{figure}
@@ -217,7 +225,8 @@ For marginalisation, we again start with the likelihood, but this time, we maint
                 0 & \mathrm{else,}
                 \end{cases}
 \end{eqnarray}
-and we simply plug these into Eqn.~\ref{eqn:bayesmargin} to obtain the posterior $P(\mu)$. Here we've chosen a wide prior for $\mu$ so as to not affect the posterior.
+and we simply plug these into Eqn.~\ref{eqn:bayesmargin} to obtain the posterior $P(\mu)$. 
+Here we've chosen a wide prior for $\mu$ so as to not affect the posterior.
 
 Now suppose you've called your colleagues up in Durham and they've sent over a theoretical prediction for the cross-section $\sigma(pp\rightarrow \mathrm{X}) = 0.01$pb. You also know your apparatus well and know that for this process, the efficiency of your selection will be $\epsilon=0.9$ and the acceptance $A=0.5$. You collide protons until you reach a total integrated luminosity of $l=100\mathrm{pb}^{-1}$. You don't know the luminosity perfectly, but it has been measured to within 10\%, so $k=0.1$. The backround rate is known to be $B=0.5 $. After running the experiment, we observe 2 events. Below is some code which defines this setup. We can save this in a file called \textsf{model.py} so that we can import it later rather than redefine each time.
 \begin{lstlisting}[style = Python]
@@ -234,15 +243,18 @@ def lamb(mu,eta):
   return mu*eff*A*l*((1+k)**eta)*sigma_TH + B
 \end{lstlisting}
 
-To calculate the profile likelihood in our simple counting experiment, we use the Newton method. Figure~\ref{fig:profiledlikelihoodex_counting} can be produced 
-by following the notebook \href{https://github.com/nucleosynthesis/PGStatistics/blob/main/notebooks/ProfilingVsMarginalisation.ipynb}{\textsf{ProfilingVsMarginalisation.ipynb}}.
+To calculate the profile likelihood in our simple counting experiment, 
+we use the Newton method. Figure~\ref{fig:profiledlikelihoodex_counting} can be produced 
+by following the notebook 
+\href{https://github.com/nucleosynthesis/PGStatistics/blob/main/notebooks/ProfilingVsMarginalisation.ipynb}{\textsf{ProfilingVsMarginalisation.ipynb}}.
 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=\textwidth]{figures/Hypotest/prof_lh_ex.pdf}
-<<<<<<< HEAD
     \caption{Left: Twice negative log-likelihood function for the counting experiment vs 
-    $\mu$ and $\eta$. The red line shows the profiled value of the nuisance parameter at each value of $\mu$ $\hat{\eta}_{\mu}$. Right: the profiled log-likelihood function $q(\mu)$.}
+    $\mu$ and $\eta$. 
+    The red line shows the profiled value of the nuisance parameter at each value of $\mu$ $\hat{\eta}_{\mu}$. 
+    Right: the profiled log-likelihood function $q(\mu)$.}
     \label{fig:profiledlikelihoodex_counting}
 \end{figure}
 
@@ -255,13 +267,6 @@ Again, you can follow the
 \href{https://github.com/nucleosynthesis/PGStatistics/blob/main/notebooks/ProfilingVsMarginalisation.ipynb}{\textsf{ProfilingVsMarginalisation.ipynb}} 
 notebook to see how this works. In that notebook, the posterior distribution is also computed 
 using the Markov chain MC method that we covered in section~\ref{sec:MarkovChain}. 
-=======
-    \caption{Left: Twice negative log-likelihood function for the counting experiment vs $\mu$ and $\eta$. The red line shows the profiled value of the nuisance parameter at each value of $\mu$ $\hat{\eta}_{\mu}$. Right: the profiled log-likelihood function $q(\mu)$.}
-    \label{fig:profiledlikelihoodex_counting}
-\end{figure}
-
-If instead, we want to obtain the marginalised posterior function, we can use the \textsf{scipy.integrate.quad} methods to perform the integration numerically. An example code for producing the marginalised posterior is below, and the output from the code is shown in Figure~\ref{fig:marginalised_ex_counting}. Again, you can follow the \href{https://github.com/nucleosynthesis/PGStatistics/blob/main/notebooks/ProfilingVsMarginalisation.ipynb}{\textsf{ProfilingVsMarginalisation.ipynb}} notebook to see how this works. In that notebook, the posterior distribution is also computed using the Markov chain MC method that we covered in section~\ref{}. 
->>>>>>> 774f8d8729ae0879bc6e1c7c5316ec6e698ffc5e
 
 
 \begin{figure}[hbt!]
