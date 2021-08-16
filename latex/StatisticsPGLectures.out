@@ -1,0 +1,39 @@
+\BOOKMARK [1][-]{section.1}{Ideas for next time}{}% 1
+\BOOKMARK [1][-]{section.2}{Introduction}{}% 2
+\BOOKMARK [1][-]{section.3}{Probability}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Frequentist probability}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Bayesian probability}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Properties of probability}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{Bayes theorem}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Probability distributions}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{The Poisson distribution }{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Continuous random variables and probability densities}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Moments of probability distributions}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.4}{Compositions of probability distributions}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{The convergence law of large numbers}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{The central limit theorem}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Markov Chains}{section.5}% 15
+\BOOKMARK [1][-]{section.6}{Hypothesis testing}{}% 16
+\BOOKMARK [2][-]{subsection.6.1}{Type-I and type-II errors}{section.6}% 17
+\BOOKMARK [2][-]{subsection.6.2}{Likelihoods}{section.6}% 18
+\BOOKMARK [2][-]{subsection.6.3}{Neyman-Pearson Lemma}{section.6}% 19
+\BOOKMARK [2][-]{subsection.6.4}{Nuisance parameters}{section.6}% 20
+\BOOKMARK [2][-]{subsection.6.5}{A counting experiment}{section.6}% 21
+\BOOKMARK [2][-]{subsection.6.6}{Upper limits and common HEP test statistic}{section.6}% 22
+\BOOKMARK [1][-]{section.7}{Point estimates and confidence/credible intervals}{}% 23
+\BOOKMARK [2][-]{subsection.7.1}{Maximum likelihood estimators}{section.7}% 24
+\BOOKMARK [2][-]{subsection.7.2}{Neyman construction and frequentist confidence intervals}{section.7}% 25
+\BOOKMARK [2][-]{subsection.7.3}{Wilks' theorem and the MINOS method}{section.7}% 26
+\BOOKMARK [2][-]{subsection.7.4}{Coverage in the counting experiment}{section.7}% 27
+\BOOKMARK [2][-]{subsection.7.5}{Conversions to Z-scores}{section.7}% 28
+\BOOKMARK [2][-]{subsection.7.6}{Bayesian credible intervals}{section.7}% 29
+\BOOKMARK [1][-]{section.8}{Summary}{}% 30
+\BOOKMARK [1][-]{section.9}{Problems}{}% 31
+\BOOKMARK [2][-]{subsection.9.1}{Kolmogorov axioms}{section.9}% 32
+\BOOKMARK [2][-]{subsection.9.2}{No correlation does not mean independence}{section.9}% 33
+\BOOKMARK [2][-]{subsection.9.3}{Cauchy distribution}{section.9}% 34
+\BOOKMARK [2][-]{subsection.9.4}{Convergence to a Dirac-delta function}{section.9}% 35
+\BOOKMARK [2][-]{subsection.9.5}{Normal approximation to a Poisson}{section.9}% 36
+\BOOKMARK [2][-]{subsection.9.6}{Phone call for Peter Higgs}{section.9}% 37
+\BOOKMARK [2][-]{subsection.9.7}{Coverage of Poisson intervals}{section.9}% 38
+\BOOKMARK [2][-]{subsection.9.8}{Maximum likelihood and intervals for exponential decay}{section.9}% 39
