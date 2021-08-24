@@ -6,6 +6,8 @@ from counting_model import *
 def lamb(mu,eta):
   return mu*eff*A*l*((1+k)**eta)*sigma_TH + B
 
+# Functions for Frequentist calculations -> 
+
 # define q and its derivatives wrt eta
 def q(mu,eta,np,eta_p):
   la = lamb(mu,eta)
@@ -47,3 +49,32 @@ def profiled_eta(n_p,eta_p,mu):
     init_eta = init_eta - qp/d2q(n_p,mu,init_eta)
   return init_eta
 
+# Functions for Bayesian calculations 
+
+# Likelihood --> P(n|mu,eta)
+def Likelihood(n,mu,eta):
+  l = lamb(mu,eta)
+  return (l**n)*numpy.exp(-l)/numpy.math.factorial(int(n))
+
+# prior on eta P(eta)
+def prior_eta(eta): 
+  c = 1./((2*numpy.pi)**0.5)
+  return c*numpy.exp(-0.5*eta*eta)
+
+# prior on mu P(mu)
+def prior_mu(mu):
+  return 1./20 if (mu < 20 and mu > 0) else 0 
+
+# and define the product of them (the numerator in Bayes rule)
+def product(eta,mu,n):
+  return Likelihood(n,mu,eta)*prior_mu(mu)*prior_eta(eta)
+
+import scipy.integrate as integrate
+
+# integrate over eta
+def integral(mu,n):
+  return integrate.quad(product,-6,6,args=(mu,n),epsabs=1.49e-03)[0]
+    
+# and then integrate over mu
+def norm(n):
+  return integrate.dblquad(product,0.01,22,lambda x:-6,lambda x:6,args=[n],epsabs=1.49e-03)[0]
