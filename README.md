@@ -1,6 +1,6 @@
 # PGStatistics
 
-**These notebooks are migrating to the general area : https://github.com/nucleosynthesis/IntroductionToStatistics **
+## These notebooks are migrating to the general area : https://github.com/nucleosynthesis/IntroductionToStatistics
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nucleosynthesis/PGStatistics/main?urlpath=lab)
 
